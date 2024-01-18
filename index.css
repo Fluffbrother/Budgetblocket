@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-ul {
+header {
     top: 0;
     width: 100%;
     position: fixed;
@@ -10,6 +10,10 @@ ul {
     overflow: hidden;
     margin: 0;
     padding: 0;
+}
+
+nav {
+    display: inline-block;
     list-style-type: none;
 }
 
