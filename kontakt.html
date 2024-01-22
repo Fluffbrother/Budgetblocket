@@ -9,11 +9,74 @@
 </head>
 
 <body>
-    <ul>
-        <li><a class="meny" href="index.html">Hem</a></li>
-        <li><a href="objektsida.html">Objeksida</a></li>
-        <li style="float:right;"><a href="kontakt.html">Kontakta oss</a></li>
-    </ul>
+    <div class="navbar">
+        <header>
+            <img src="logo.webp" alt="logo" style="
+              background-color: red;
+              width: 64px;
+              height: 64px;
+              display: inline-block;
+            " />
+            <nav>
+                <ul>
+                    <li><a class="meny" href="index.html">Hem</a></li>
+                    <li><a href="objektsida.html">Produkter</a></li>
+                    <li style="float: right"><a href="kontakt.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1>Kontakta oss</h1>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Maila in till oss</h3>
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Namn</label>
+                            <input type="text" placeholder="Erik Jonsson">
+                        </div>
+                        <div class="input-group">
+                            <label>Telefon</label>
+                            <input type="text" placeholder="070 89 88 233">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="erik.jonsson@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Ämne</label>
+                            <input type="text" placeholder="Ämne">
+                        </div>
+                    </div>
+                    <label>Meddelande</label>
+                    <textarea rows="5" placeholder="Meddelande"></textarea>
+
+                    <button type="submit">Skicka</button>
+                </form>
+
+            </div>
+            <div class="contact-right">
+                <div class="contact-us">
+                    <ul>
+                        <li><strong>Kundservice</strong></li>
+                        <li>08-49 69 11651</li>
+                        <li><strong>Adress</strong></li>
+                        <li>Universitetsgatan 2</li>
+                        <li>651 88 Karlstad</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
