@@ -1,11 +1,23 @@
-.navbar body {
+* {
+    list-style-type: none;
+}
+
+:root {
+    --item-padding: 12px;
+    --item-radius: 20px;
+}
+
+body {
     margin: 0;
 }
 
 header {
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    position: fixed;
+    display: block;
+    position: sticky;
     background-color: black;
     overflow: hidden;
     margin: 0;
@@ -15,6 +27,18 @@ header {
 nav {
     display: inline-block;
     list-style-type: none;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: auto;
+}
+
+header > img {
+    height: 64px;
+    width: 64px;
 }
 
 li {
@@ -28,12 +52,11 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.meny) {
+nav li a:hover {
     background-color: gray;
 }
 
-.container {
-    padding-top: 10px;
+main {
     width: 80%;
     margin: 50px auto;
 }
@@ -114,4 +137,64 @@ button {
 
 .contact-us ul li {
     margin-bottom: 10px;
+}
+
+/*
+ * Products
+ */
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.items > .item {
+    flex-basis: calc(33% - 30px);
+    max-width: 500px;
+    box-sizing: border-box;
+    border-radius: var(--item-radius);
+    padding: var(--item-padding);
+    background-color: rgb(244, 244, 244);
+    transition: flex-basis 250ms ease;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.items > .item img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Make the inner radii match the outer one */
+    border-radius: calc(var(--item-radius) - var(--item-padding) / 2);
+}
+
+.items > .item a {
+    transition: box-shadow 250ms ease;
+    box-shadow: 0px 2px 5px 0px rgba(28, 0, 181, 0.2);
+    background-color: rgb(244, 244, 244);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    max-width: max-content;
+    margin: var(--item-padding) auto 0 auto;
+    padding: 4px 16px;
+    border-radius: 12px;
+}
+
+.items > .item a:hover {
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+@media screen and (max-width: 720px) {
+    .items > .item {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .items > .item {
+        flex-basis: 100%;
+    }
 }
