@@ -203,7 +203,7 @@ iframe {
     border-radius: calc(var(--item-radius) - var(--item-padding) / 2);
 }
 
-.items>.item a {
+.buy_button, .buy_img {
     transition: box-shadow 250ms ease;
     box-shadow: 0px 2px 5px 0px rgba(28, 0, 181, 0.2);
     background-color: rgb(244, 244, 244);
@@ -217,7 +217,7 @@ iframe {
     border-radius: 12px;
 }
 
-.items>.item a:hover {
+.buy_button:hover, .buy_img:hover {
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
