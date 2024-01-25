@@ -40,9 +40,8 @@ nav>ul {
     height: auto;
 }
 
-header>img {
+header > .logo {
     height: 64px;
-    width: 64px;
 }
 
 li {
