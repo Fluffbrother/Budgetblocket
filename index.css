@@ -203,6 +203,16 @@ iframe {
     border-radius: calc(var(--item-radius) - var(--item-padding) / 2);
 }
 
+.item-desc {
+    display: block;
+    margin-top: var(--item-padding);
+}
+
+.item-price {
+    display: block;
+    margin-top: var(--item-padding);
+}
+
 .buy_button, .buy_img {
     transition: box-shadow 250ms ease;
     box-shadow: 0px 2px 5px 0px rgba(28, 0, 181, 0.2);
@@ -215,6 +225,10 @@ iframe {
     margin: var(--item-padding) auto 0 auto;
     padding: 4px 16px;
     border-radius: 12px;
+}
+
+.buy_img {
+    margin-top: 0;
 }
 
 .buy_button:hover, .buy_img:hover {
