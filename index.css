@@ -26,7 +26,6 @@ header {
     display: block;
     position: sticky;
     background-color: #212329;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
