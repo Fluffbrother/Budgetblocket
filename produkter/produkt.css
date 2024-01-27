@@ -10,11 +10,16 @@
     margin-bottom: 50px;
     display: block;
 }
-.main-section > span {
+.main-section > .item-title {
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+}
+.main-section > .item-price {
     display: block;
     text-align: center;
 }
-.main-section > p {
+.main-section > .item-desc {
     display: block;
     margin: 50px auto;
     max-width: 400px;
