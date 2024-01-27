@@ -2,6 +2,26 @@
  * Products
  */
 
+.advertisement {
+    max-width: 60%;
+    display: block;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: var(--item-radius);
+    border: dashed 2px red;
+    cursor: pointer;
+    transition: box-shadow 200ms ease;
+    overflow: hidden;
+}
+
+.advertisement > img {
+    max-width: 100%;
+}
+
+.advertisement:hover {
+    box-shadow: var(--main-shadow);
+}
+
 .items {
     display: flex;
     flex-wrap: wrap;
