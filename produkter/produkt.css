@@ -1,0 +1,41 @@
+.main-section {
+    margin-bottom: 50px;
+}
+.product-img {
+    border-radius: var(--item-radius);
+    box-shadow: var(--main-shadow);
+    height: 500px;
+    max-height: 50vh;
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+}
+.main-section > span {
+    display: block;
+    text-align: center;
+}
+.main-section > p {
+    display: block;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+.sub-section {
+
+}
+
+.size-table {
+    margin: auto;
+}
+
+.size-table > thead th {
+    font-size: 1.5rem;
+}
+
+.size-table td {
+    padding: 0 20px;
+}
+
+.size-table tr:nth-child(even) {
+    background-color: rgb(239, 239, 240);
+}
