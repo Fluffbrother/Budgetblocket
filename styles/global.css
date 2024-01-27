@@ -1,4 +1,11 @@
+:root {
+    --item-padding: 12px;
+    --item-radius: 20px;
+    --main-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
 * {
+    /* Remove ugly list item bullets */
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -6,18 +13,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
-    --item-padding: 12px;
-    --item-radius: 20px;
-    --main-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
-}
-
 body {
     margin: 0;
+    /*
+     * Make sure that the footer is always at the bottom of the page,
+     * even if the page is shorter than the monitor height.
+     */
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
+/*
+ * Header
+ */
 
 header {
     top: 0;
@@ -25,6 +34,10 @@ header {
     right: 0;
     width: 100%;
     display: block;
+    /* 
+     * Always position the header on top of the page.
+     * Also offsets the content below by the height automatically.
+     */
     position: sticky;
     background-color: #212329;
     margin: 0;
@@ -36,7 +49,7 @@ nav {
     list-style-type: none;
 }
 
-nav>ul {
+nav > ul {
     padding: 0;
     margin: 0;
     display: block;
@@ -48,7 +61,7 @@ header > .logo {
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 li a {
@@ -61,6 +74,10 @@ li a {
 nav li a:hover {
     background-color: gray;
 }
+
+/*
+ * Main
+ */
 
 main {
     width: 80%;
@@ -169,7 +186,7 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 4px;
-    background-color: #F9423D;
+    background-color: #f9423d;
     border: none;
     outline: none;
     color: #fff;
@@ -178,7 +195,7 @@ button {
 
 #footer-email-button:hover {
     cursor: pointer;
-    background-color: #337AF1;
+    background-color: #337af1;
     transition: all 0.4s ease-out;
 }
 
