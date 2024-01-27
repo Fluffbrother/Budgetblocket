@@ -49,14 +49,14 @@ nav {
     list-style-type: none;
 }
 
-nav > ul {
+nav>ul {
     padding: 0;
     margin: 0;
     display: block;
     height: auto;
 }
 
-header > .logo {
+header>.logo {
     height: 64px;
 }
 
@@ -131,6 +131,7 @@ button {
     padding: 2rem 0 4rem 0;
 }
 
+/* Sets the size and color of the bakgrund for the footer*/
 .footer {
     width: 80%;
     height: auto;
@@ -167,6 +168,7 @@ button {
     margin-bottom: 2rem;
 }
 
+/* Makes the size of the email input bar and makes it pretty */
 #footer-email {
     width: 250px;
     height: 40px;
@@ -182,6 +184,7 @@ button {
     color: #b1b1b1;
 }
 
+/* Makes the footer button pretty */
 #footer-email-button {
     width: 100px;
     height: 40px;
@@ -199,6 +202,7 @@ button {
     transition: all 0.4s ease-out;
 }
 
+/* Adjust the size of the footer to the screen */
 @media screen and (max-width: 1150px) {
     .footer {
         height: 50vh;
@@ -209,12 +213,14 @@ button {
     }
 }
 
+/* Adjust the size of the footer to the screen */
 @media screen and (max-width: 820px) {
     .footer {
         padding-top: 2rem;
     }
 }
 
+/* Adjust the size of the footer for a mobilscreen and hides the social media links */
 @media screen and (max-width: 720px) {
     .footer-3 {
         display: none;
