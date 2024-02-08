@@ -1,9 +1,9 @@
-label {
+.input-row .input-group label {
     margin-bottom: 6px;
     display: block;
 }
 
-input {
+.input-row .input-group input {
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -34,7 +34,7 @@ iframe {
     padding: 40px 60px;
 }
 
-.contact-left > form {
+.contact-left>form {
     margin-bottom: 50px;
 }
 
@@ -65,7 +65,7 @@ iframe {
     justify-content: center;
 }
 
-.contact-us > * {
+.contact-us>* {
     flex-basis: 100%;
 }
 
@@ -91,4 +91,14 @@ iframe {
     width: 100%;
     margin-bottom: 10px;
     color: #fff;
+}
+
+.check-row .check-group input {
+    width: max-content;
+    margin-top: 1rem;
+}
+
+.check-row .check-group label {
+    display: inline-block;
+    font-size: 0.8rem;
 }
