@@ -30,19 +30,19 @@ iframe {
     justify-content: center;
 }
 
-.contact-left {
-    padding: 40px 60px;
+.contact-right {
+    padding: 25px 40px;
 }
 
-.contact-left>form {
+.contact-right>form {
     margin-bottom: 50px;
 }
 
-.contact-left h3 {
+.contact-right h3 {
     margin-bottom: 10px;
 }
 
-.contact-right {
+.contact-left {
     background: #F9423D;
     padding: 20px;
     border-radius: 30px;
