@@ -102,3 +102,64 @@ iframe {
     display: inline-block;
     font-size: 0.8rem;
 }
+
+.news label {
+    margin-bottom: 6px;
+    display: block;
+    padding-top: 1rem;
+}
+
+.news-box input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    height: 40px;
+}
+
+.news h3 {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-class {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.feedback h3 {
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.feedback a {
+    color: #212329;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.feedback a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.news .check-group input {
+    width: max-content;
+    margin-top: 1rem;
+}
+
+.news .check-group label {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.news button {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
