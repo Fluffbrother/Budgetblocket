@@ -2,6 +2,7 @@
     --item-padding: 12px;
     --item-radius: 20px;
     --main-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    --header-color: #212329;
 }
 
 * {
@@ -39,14 +40,16 @@ header {
      * Also offsets the content below by the height automatically.
      */
     position: sticky;
-    background-color: #212329;
+    background-color: var(--header-color);
     margin: 0;
     padding: 0;
+    z-index: 1000;
 }
 
 nav {
     display: block;
     list-style-type: none;
+    box-shadow: var(--main-shadow);
 }
 
 nav>ul {
@@ -62,17 +65,43 @@ header>.logo {
 
 li {
     display: inline-block;
+    position: relative;
 }
 
-li a {
+li a, li span {
+    transition: background-color 200ms ease-out;
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav li a:hover {
+nav li a:hover, nav li span:hover {
     background-color: gray;
+}
+
+/*
+ * Drop Down menu
+ */
+
+/* The actual Drop down menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--header-color);
+    box-shadow: var(--main-shadow);
+    border-radius: 0 0 var(--item-radius) var(--item-radius);
+    width: 100%;
+    overflow: hidden;
+}
+
+nav .dropdown-button {
+    cursor: pointer;
+}
+
+/* Show the dropdown div sibling when the downdown-button is hovered */
+nav .dropdown-button:hover ~ div, .dropdown:hover {
+    display: block;
 }
 
 /*
