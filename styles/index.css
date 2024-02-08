@@ -3,26 +3,6 @@
  * Products
  */
 
-.advertisement {
-    max-width: 60%;
-    display: block;
-    margin: 50px auto;
-    padding: 50px;
-    border-radius: var(--item-radius);
-    border: dashed 2px red;
-    cursor: pointer;
-    transition: box-shadow 200ms ease;
-    overflow: hidden;
-}
-
-.advertisement > img {
-    max-width: 100%;
-}
-
-.advertisement:hover {
-    box-shadow: var(--main-shadow);
-}
-
 /* The list of all products */
 .items {
     --gap-size: 30px;
@@ -42,12 +22,13 @@
     border-radius: var(--item-radius);
     padding: var(--item-padding);
     background-color: rgb(244, 244, 244);
-    transition: flex-basis 250ms ease, border 250ms ease;
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    transition: flex-basis 250ms ease, border 250ms ease, box-shadow 250ms ease;
+    box-shadow: var(--main-shadow);
 }
 
 .items > .item:hover {
-    border: solid 1px rgba(28, 0, 181, 0.3);
+    border: solid 1px var(--accent-color);
+    box-shadow: var(--main-shadow-hover);
 }
 
 /* Reduce the amount of products per row to 2 when the width is below 721px */

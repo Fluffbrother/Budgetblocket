@@ -1,7 +1,10 @@
 :root {
+    --accent-color: #660023;
+    --accent-color-alt: #dfc615;
     --item-padding: 12px;
     --item-radius: 20px;
-    --main-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    --main-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    --main-shadow-hover: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
     --header-color: #212329;
 }
 
@@ -43,13 +46,13 @@ header {
     background-color: var(--header-color);
     margin: 0;
     padding: 0;
+    box-shadow: var(--main-shadow);
     z-index: 1000;
 }
 
 nav {
     display: block;
     list-style-type: none;
-    box-shadow: var(--main-shadow);
 }
 
 nav>ul {
@@ -77,7 +80,7 @@ li a, li span {
 }
 
 nav li a:hover, nav li span:hover {
-    background-color: gray;
+    background-color: var(--accent-color);
 }
 
 /*
@@ -130,10 +133,9 @@ button {
 }
 
 .map_button,
-.buy_button,
-.buy_img {
+.buy_button {
     transition: box-shadow 250ms ease;
-    box-shadow: 0px 2px 5px 0px rgba(28, 0, 181, 0.2);
+    box-shadow: var(--main-shadow);
     background-color: rgb(244, 244, 244);
     text-decoration: none;
     color: black;
@@ -146,9 +148,8 @@ button {
 }
 
 .map_button:hover,
-.buy_button:hover,
-.buy_img:hover {
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+.buy_button:hover {
+    box-shadow: var(--main-shadow-hover);
 }
 
 /*
@@ -189,7 +190,7 @@ button {
 }
 
 .footer-heading a:hover {
-    color: red;
+    color: var(--accent-color-alt);
     transition: 0.3s ease-out;
 }
 
@@ -218,7 +219,7 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 4px;
-    background-color: #f9423d;
+    background-color: var(--accent-color);
     border: none;
     outline: none;
     color: #fff;
@@ -227,7 +228,8 @@ button {
 
 #footer-email-button:hover {
     cursor: pointer;
-    background-color: #337af1;
+    background-color: var(--accent-color-alt);
+    color: black;
     transition: all 0.4s ease-out;
 }
 
