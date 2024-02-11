@@ -51,7 +51,7 @@ header {
 }
 
 nav {
-    display: block;
+    display: inline-block;
     list-style-type: none;
 }
 
