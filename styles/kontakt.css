@@ -82,7 +82,7 @@ iframe {
 
 .contact-us ul a:hover {
     cursor: pointer;
-    color: #337AF1;
+    color: var(--accent-color-alt);
     transition: all 0.4s ease-out;
 }
 
@@ -140,7 +140,7 @@ iframe {
 }
 
 .feedback a:hover {
-    color: red;
+    color: var(--accent-color-alt);
     transition: 0.3s ease-out;
 }
 
@@ -162,4 +162,8 @@ iframe {
     border-radius: 30px;
     margin-top: 20px;
     box-shadow: var(--main-shadow);
+}
+
+select {
+    width: 2.5rem;
 }
